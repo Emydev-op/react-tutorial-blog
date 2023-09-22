@@ -20,7 +20,7 @@ const Create = () => {
             body: JSON.stringify(newBlog),
         }).then(()=> {
             setIsPending(false);
-            history.push('/')
+            history.push('/');
         })
     };
 
