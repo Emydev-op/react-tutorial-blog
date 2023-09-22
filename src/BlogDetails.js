@@ -12,7 +12,8 @@ const { data:blog, isPending, error } = useFetch('http://localhost:8000/blogs/' 
             {error && <div> {error} </div>}
             {blog && (
                 <article>
-                    <h2>Written by {blog.author}</h2>
+                    <h2>{ blog.title }</h2>
+                    <p>Written by {blog.author}</p>
                     <div>{blog.body}</div>
                 </article>
             )}
